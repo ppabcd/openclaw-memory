@@ -1,0 +1,33 @@
+# Secrets - JANGAN DIUPLOAD!
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+n8n-credentials.json
+
+# Cache & Temporary
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+.npm
+.cache/
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large files (optional, bisa diupload kalau perlu)
+# *.png
+# *.jpg
+# *.mp3
+# *.mp4
