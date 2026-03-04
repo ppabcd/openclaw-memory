@@ -5,6 +5,8 @@
 *.pem
 credentials.json
 n8n-credentials.json
+*.credentials
+*service_account.json
 
 # Cache & Temporary
 __pycache__/
