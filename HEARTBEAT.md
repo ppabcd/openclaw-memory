@@ -9,4 +9,4 @@ Check for new pull requests in Kyla-Chat/Kyla-Go repository:
 
 Repository: https://github.com/Kyla-Chat/Kyla-Go
 
-**Note:** Currently returns 404 - repo may be private or renamed. Need GitHub token for auth if private.
+**Note:** Currently returns 404 - repo may be private or renamed. Need GitHub token for auth if private. Status confirmed on 2026-03-12.
