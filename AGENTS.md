@@ -210,3 +210,37 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## 🧠 Context Window Management
+
+Your context window is finite (128K-200K tokens). Manage it proactively:
+
+### Signs of Memory Pressure
+- Repeating explanations
+- Forgetting constraints mentioned earlier
+- Circular conversations
+
+### Compact Strategically
+
+**Compact BEFORE:**
+- Complex multi-step tasks
+- Code refactoring sessions
+- Long debugging sessions
+- After reading 5+ files
+
+**Compact AFTER:**
+- File exploration (directory listings, searches)
+- Large output processing
+- MCP tool batches (MCP results can be 10-20K tokens each)
+
+### The Checkpoint Pattern
+Before compacting, summarize critical requirements so they survive compression:
+"Remember these key requirements: [list]. Now compact, then implement."
+
+### MCP Context Trap
+MCP tools consume context aggressively but results may not show in conversation history. After MCP-heavy operations (email, calendar, tasks), always compact. Break heavy MCP operations into chunks with compaction between them.
+
+### Rules
+1. Don't compact randomly — you'll lose useful context
+2. Compact when switching topics — clean slate for new domain
+3. Use /compact not restart — maintains system memory files
